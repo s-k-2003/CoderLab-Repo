@@ -1,0 +1,160 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+.playground-nav{
+    background-color: var(--dark);
+    border-bottom: 1px solid var(--grey);
+}
+.playground-nav .nav-logo-title,
+.playground-nav .nav-list .nav-link{
+    color: var(--backgroundColor);
+}
+
+
+
+.playground-nav .nav-list .nav-link:hover:not(.help-btn, .profile-box){
+    font-size: 18px;
+    background-color: var(--backgroundColor);
+    color: var(--text-color);
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+}
+
+.help-btn{
+    padding: 10px 20px;
+    background-color: var(--backgroundColor);
+    color: var(--text-color) !important;
+    border-radius: 10px;
+}
+
+.editor-body{
+    min-height: 100vh;
+    background-color: var(--dark);
+    overflow: hidden;
+}
+
+
+.editor-heading{
+    font-size: 24px;
+    font-weight: 550;
+    color: var(--backgroundColor);
+}
+
+.editor-container{ 
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.editor-left{
+    width: 45%;
+    border-right: 1px solid var(--backgroundColor);
+}
+
+.editor-question-title{
+    color: var(--backgroundColor);
+    font-weight: 500;
+    font-size: 20px;
+}
+.editor-question{
+    color: var(--backgroundColor);
+    font-weight: 300;
+    line-height: 2;
+    font-size: 18px;
+}
+
+.editor-right{
+    margin: 0 30px;
+    width: 55%;
+    
+}
+
+.editor-input-heading{
+    color: var(--backgroundColor);
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.editor-input{
+    color: var(--backgroundColor);
+}
+
+.editor-code-heading{
+    color: var(--backgroundColor);
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.code-heading{
+    color: var(--backgroundColor);
+}
+
+.disabled-editor{
+    opacity: 0.5;
+    pointer-events: none;
+}
+.enabled-editor{
+    opacity: 1;
+    pointer-events: all;
+}
+
+.editor-output-heading{
+    color: var(--backgroundColor);
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.editor-output-subtitle {
+    color: var(--backgroundColor);
+}
+
+.editor-output-area{
+    width: 60%;
+    height: 10%;
+    padding-left: 10px; 
+    font-weight: 500;
+    line-height: 1.5;
+    background-color: var(--dark2);
+    color: var(--backgroundColor);
+    border-radius: 10px;
+    resize: none;
+    /* pointer-events: none; */
+}
+
+.language-choosen{
+    float: right;
+    margin: 0 150px;
+    width: 20%;
+    height: 35px;
+    padding-left: 10px;    
+    background-color: var(--dark2);
+    color: var(--backgroundColor);
+    border: 1px solid var(--backgroundColor); 
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.play-run-btn{
+    float: right;
+    margin: 0 100px;
+    width: 10%;
+    padding: 10px 20px;
+    background-color: var(--mainColor);
+    color: var(--backgroundColor);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.play-run-btn.disabled-btn{
+    cursor: not-allowed !important;
+    pointer-events: none;
+    opacity: 0.5; 
+}
+
+

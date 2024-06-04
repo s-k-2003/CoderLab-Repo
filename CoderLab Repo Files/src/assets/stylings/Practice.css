@@ -1,0 +1,155 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* Reusabe Stylings */
+
+.margin-70{
+    margin: 0 70px;
+}
+.margin-30{
+    margin: 0 30px;
+}
+
+.margin-10{
+    margin: 0 10px;
+}
+
+.mb10{
+    margin-bottom: 10px;
+}
+.mb20{
+    margin-bottom: 20px;
+}
+.mb30{
+    margin-bottom: 30px;
+}
+.mb40{
+    margin-bottom: 40px;
+}
+.mb60{
+    margin-bottom: 60px;
+}
+.mb80{
+    margin-bottom: 80px;
+}
+
+.fl-left{
+    float: left;
+}
+
+.fl-right{
+    float: right;
+}
+
+.display-hide{
+    display: none;
+}
+
+.display-show{
+    display: block;
+}
+
+.display-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Stylings */
+
+.practice-body{
+    min-height: 100vh;
+}
+
+.learn-heading{
+    font-size: 40px;
+    font-weight: 500;
+    
+}
+
+.learn-subtitle{
+    font-size: 18px;
+    font-weight: 550;
+    color: var(--dark-grey);
+    
+}
+
+.languages-container{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    
+}
+
+.languages-list{
+    position: relative;
+}
+
+
+.language-name{
+    color: var(--dark-grey);
+    display: inline-block;
+    text-transform: capitalize;
+}
+
+.language-name:hover{
+    color: var(--text-color);
+}
+
+
+
+.language-name.name-active{
+    color: var(--text-color);
+}
+
+.language-line.line-active{
+    border-bottom: 2px solid var(--text-color);
+}
+
+.language-line{
+    display: block;
+    border-bottom: 2px solid var(--dark-grey);
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+}
+
+.language-levels-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+
+.language-level{
+    flex: 0 1 calc(20% - 10px);
+}
+
+
+.level-img{
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.level-heading{
+    font-size: 18px;
+    font-weight: 420;
+    margin-bottom: 2px;
+    color: var(--dark);
+}
+
+.level-subtitle{
+    color: var(--dark-grey);
+    font-weight: 400;
+}

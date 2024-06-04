@@ -1,0 +1,208 @@
+.testeditor-body{
+    min-height: 100vh;
+}
+
+
+.testeditor-container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.testeditor-left{
+    width: 40%;
+    border-radius: 10px;
+    padding-left: 20px;
+    /* border-left: 2px solid var(--text-color);
+    border-right: 2px solid var(--text-color); */
+}
+
+.testeditor-heading{
+    display: flex;
+}
+
+.testeditor-testname{
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--dark2);
+}
+
+.test-sep{
+    font-weight: 450;
+}
+
+.testname{
+    text-align: center;
+    font-weight: 600;
+    padding: 10px 10px;
+    background-color: var(--dark2);
+    color: var(--backgroundColor);
+    width: 15%;
+    border-radius: 10px;
+    margin: 0 4px;
+}
+
+.testeditor-instructions{
+    padding-left: 10px;
+}
+
+.testeditor-instruction{
+    list-style:circle;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.testeditor-input-1{
+    line-height: 2;
+}
+
+.testeditor-program-output{
+    width: 80%;
+    background-color: var(--dark);
+    color: var(--backgroundColor);
+    padding-left: 20px;
+    padding-top: 20px;
+    border-radius: 10px;
+    pointer-events: none;
+}
+
+.testeditor-concept{
+    text-align: center;
+    font-weight: 600;
+    padding: 10px 10px;
+    background-color: var(--dark2);
+    color: var(--backgroundColor);
+    width: 15%;
+    border-radius: 10px;
+}
+
+
+
+.testeditor-right{
+    width: 60%;
+    border-radius: 20px;
+    /* background-color: rgba(0, 0, 0, 0.04);  */
+}
+
+.testeditor-right-nav{
+    width: 100%;
+    padding: 10px 10px;
+    padding-left: 20px;
+    color: var(--text-color);
+    border-radius: 10px 10px 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.testeditor-nav-secondary{
+    display: flex;
+    padding-top: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.testeditor-languages-choosen{
+    width: 120%;
+    height: 40px; 
+    text-align: center;
+    background-color: var(--dark);
+    color: var(--backgroundColor);
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 16px;
+    -webkit-appearance: none;
+    -moz-appearance: none; 
+    appearance: none; 
+}
+
+.testeditor-duration{
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.testeditor-duration span{
+    font-size: 16px !important;
+}
+
+.testeditor-submit{
+    text-align: center;
+    padding: 10px 20px;
+    background-color: var(--success);
+    color: var(--backgroundColor);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.testeditor-submit.run-code{
+    background-color: var(--mainColor);
+    color: var(--backgroundColor);
+}
+
+.texteditor-countdown{
+    padding: 10px 10px;
+    background-color: var(--dark);
+    color: var(--light-success);
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+.testeditor-testcase-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.testeditor-testcase-title{
+    font-size: 16px;
+}
+
+.testeditor-result-check{
+    font-size: 14px;
+}
+
+.testeditor-result{
+    padding: 5px 5px;
+    color: var(--backgroundColor);
+    border-radius: 20px;
+    font-size: 12px !important;
+}
+
+.testeditor-result.passed{
+    background-color: var(--success);
+}
+
+.testeditor-result.failed{
+    background-color: var(--danger);
+}
+
+.testeditor-testcase-icon{
+    padding: 10px 10px;
+    border-radius: 50%;
+}
+.testeditor-testcase-icon.passed{
+    background-color: var(--success);
+    color: var(--backgroundColor);
+}
+.testeditor-testcase-icon.failed{
+    background-color: var(--danger);
+    color: var(--backgroundColor);
+}
+
+.testeditor-submit:disabled{
+    cursor: not-allowed;
+}
+
+
+.enabled-testeditor{
+    opacity: 1;
+    pointer-events: all;
+}
+
+.disabled-testeditor{
+    opacity: 0.5;
+    pointer-events: none;
+    cursor: not-allowed;
+}
